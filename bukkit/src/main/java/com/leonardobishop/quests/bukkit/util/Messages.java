@@ -46,6 +46,7 @@ public enum Messages {
     COMMAND_CATEGORY_OPEN_DOESNTEXIST("messages.command-category-open-doesntexist", "&7The specified category '&c{category}&7' does not exist."),
     COMMAND_CATEGORY_OPEN_DISABLED("messages.command-category-open-disabled", "&7Categories are disabled."),
     COMMAND_TASKVIEW_ADMIN_FAIL("messages.command-taskview-admin-fail", "&7Task type '&c{task}&7' does not exist."),
+    COMMAND_TASK_COMPLETED("messages.command-task-completed", "&7Task '&c{task}&7' of quest '&c{quest}&7' completed."),
     BETA_REMINDER("messages.beta-reminder", "&cQuests > &7Reminder: you are currently using a &cbeta &7version of Quests. Please send bug reports to https://github.com/LMBishop/Quests/issues and check for updates regularly using &c/quests admin update&7!"),
     COMMAND_QUEST_ADMIN_LOADDATA("messages.command-quest-admin-loaddata", "&7Quest data for '&c{player}&7' is being loaded."),
     COMMAND_QUEST_ADMIN_NODATA("messages.command-quest-admin-nodata", "&7No data could be found for player &c{player}&7."),
