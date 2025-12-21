@@ -506,6 +506,7 @@ messages:
   command-quest-openstarted-admin-success: "&7Opened started Quest GUI for player &c{player}&7."
   command-quest-opencategory-admin-success: "&7Opened category &c{category} &7for player &c{player}&7."
   command-taskview-admin-fail: "&7Task type '&c{task}&7' does not exist."
+  command-task-completed: "&7Task '&c{task}&7' of quest '&c{quest}&7' completed."
   beta-reminder: "&cQuests > &7Reminder: you are currently using a &cbeta &7version of Quests. Please send bug reports to https://github.com/LMBishop/Quests/issues and check for updates regularly using &c/quests admin update&7!"
   command-quest-admin-loaddata: "&7Quest data for '&c{player}&7' is being loaded."
   command-quest-admin-nodata: "&7No data could be found for player &c{player}&7."

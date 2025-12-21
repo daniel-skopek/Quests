@@ -2,6 +2,7 @@ package com.leonardobishop.quests.bukkit.tasktype.type;
 
 import com.leonardobishop.quests.bukkit.BukkitQuestsPlugin;
 import com.leonardobishop.quests.bukkit.tasktype.BukkitTaskType;
+import com.leonardobishop.quests.bukkit.util.Messages;
 import com.leonardobishop.quests.bukkit.util.TaskUtils;
 import com.leonardobishop.quests.bukkit.util.constraint.TaskConstraintSet;
 import com.leonardobishop.quests.common.player.QPlayer;
@@ -43,6 +44,8 @@ public final class CommandTaskType extends BukkitTaskType {
             message = message.substring(1);
         }
 
+        boolean taskCompleted = false;
+
         for (TaskUtils.PendingTask pendingTask : TaskUtils.getApplicableTasks(player, qPlayer, this, TaskConstraintSet.ALL)) {
             Quest quest = pendingTask.quest();
             Task task = pendingTask.task();
@@ -59,6 +62,16 @@ public final class CommandTaskType extends BukkitTaskType {
 
             super.debug("Marking task as complete", quest.getId(), task.getId(), player.getUniqueId());
             taskProgress.setCompleted(true);
+
+            if (!taskCompleted) {
+                taskCompleted = true;
+            }
+
+            Messages.COMMAND_TASK_COMPLETED.send(player, "{quest}", quest.getId(), "{task}", task.getId());
+        }
+
+        if (taskCompleted) {
+            event.setCancelled(true);
         }
     }
 }
