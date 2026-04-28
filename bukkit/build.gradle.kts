@@ -48,7 +48,15 @@ repositories {
     // PlaceholderAPI
     maven("https://repo.extendedclip.com/releases")
     // ItemsAdder, SCore, ShopGUIPlus, Slimefun4, Vault
-    maven("https://jitpack.io/")
+    maven("https://jitpack.io/") {
+        content {
+            includeGroup("com.github.LoneDev6")
+            includeGroup("com.github.Ssomar-Developement")
+            includeGroup("com.github.brcdev-minecraft")
+            includeGroup("com.github.Slimefun")
+            includeGroup("com.github.MilkBowl")
+        }
+    }
     // PlayerPoints
     maven("https://repo.rosewooddev.io/repository/public/")
     // SuperiorSkyblock2
@@ -71,7 +79,7 @@ dependencies {
     compileOnlyProject(":common")
 
     // Paper
-    compileOnlyServer("io.papermc.paper:paper-api:1.21.11-pre3-R0.1-SNAPSHOT")
+    compileOnlyServer("io.papermc.paper:paper-api:26.1.1.build.29-alpha")
 
     // ASkyBlock
     compileOnlyPlugin("com.wasteofplastic:askyblock:3.0.9.4")
@@ -134,7 +142,7 @@ dependencies {
     // uSkyBlock TODO fix whenever repo is up
     //compileOnlyPlugin("ovh.uskyblock:uSkyBlock-API:2.8.9")
     // Vault
-    compileOnlyPlugin("com.github.MilkBowl:VaultAPI:1.7.1")
+    compileOnlyPlugin("com.github.MilkBowl:VaultAPI:1.7")
     // VotingPlugin
     compileOnlyPlugin("com.bencodez:votingplugin:6.18.4")
     // WildStacker
