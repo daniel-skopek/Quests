@@ -42,7 +42,7 @@ repositories {
     // Nexo
     maven("https://repo.nexomc.com/releases")
     // NuVotifier
-    maven("https://repo.leonardobishop.com/releases/")
+    mavenLocal()
     // Oraxen
     maven("https://repo.oraxen.com/releases")
     // PlaceholderAPI
@@ -124,7 +124,7 @@ dependencies {
     // Nexo
     compileOnlyPlugin("com.nexomc:nexo:1.1.0")
     // NuVotifier
-    compileOnlyPlugin("com.vexsoftware:NuVotifier:2.7.3")
+    compileOnlyPlugin("com.vexsoftware:nuvotifier-api:3.0.0-SNAPSHOT")
     // Oraxen
     compileOnlyPlugin("io.th0rgal:oraxen:1.175.0")
     // PlaceholderAPI
