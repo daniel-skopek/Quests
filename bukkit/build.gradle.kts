@@ -41,6 +41,8 @@ repositories {
     maven("https://mvn.lumine.io/repository/maven-public/")
     // Nexo
     maven("https://repo.nexomc.com/releases")
+    // NuVotifier
+    mavenLocal()
     // Oraxen
     maven("https://repo.oraxen.com/releases")
     // PlaceholderAPI
